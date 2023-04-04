@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      #intro {
+        background-image: url("../assests/JRG_0552.jpg");
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center center;
+
+      }
+
+      /* Height for devices larger than 576px */
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+      .nav-item {
+        padding-right: .5 rem;
+      }
+
+      .timeline {
+  position: relative;
+  margin: 50px 0;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #333;
+  transform: translateX(-50%);
+}
+
+.timeline-event {
+  position: relative;
+  margin: 50px 0;
+}
+
+.timeline-date {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-date p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.timeline-content {
+  padding-left: 80px;
+  width: 50%;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+}
+
+
+@media (max-width: 991.98px) {
+  .timeline-date {
+    top: -20px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .timeline-date p {
+    font-size: 16px;
+  }
+  
+  .timeline-content {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline-date {
+    top: -15px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .timeline-date p {
+    font-size: 14px;
+  }
+  
+  .timeline-content {
+    padding-left: 40px;
+  }
+}
+
+.banner-image {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover; /* This property is set to "none" so that we can use "object-position" */
+  object-position: fill; /* This will show only the top portion of the image */
+}
+
+#email-btn{
+  width: 100%;
+}
+
+#footer-logo {
+  height: 150px;
+}
+
+.email{
+
+}
+
+
+
+    </style>
+  </head>
+  <body>
+  
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center align-items-center py-2">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="/assests/signal-2022-10-18-090138.png" alt="Logo" width="100" height="auto" class="d-inline-block">
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#about" class="nav-link" aria-current="page">Meet _______ </a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Priorities</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Socials</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active">Donate</a></li>
+        </ul>
+      </header>
+    </div>
+
+<div id="intro" class="bg-image shadow-2-strong">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+    <div class="container d-flex align-items-center justify-content-center text-center h-100">
+
+    </div>
+  </div>
+</div>
+
+<div id="about" class="py-4 my-5 text-center">
+  <h1 class="display-4 fw-bold text-body-emphasis">
+    "Slogan, Saying, Something"
+  </h1>
+  </div>
+</div>
+
+<!-- Pictures and paragrapghs section -->
+
+<section class="bg-light">
+  <container class="py-5">
+    <div class="row px-md-5 mx-md-5">
+      <div class="col-6 ">
+        <div class="container">
+
+<!--Quote under photo-->
+          <div class="container d-flex align-items-center justify-content-center pb-5">
+          <img src="/assests/JRG_0831.jpeg" alt="" class="img-fluid">
+        </div>
+          <p class="lead display-6 fw-bold px-1">
+            “Like my own family, I believe all families should 
+            have a fair shot at the American dream.”
+        </p>
+      </div>
+      </div>
+      <div class="col-lg-6 text-start">
+        <div class="container w-75 ms-0">
+          <div class="">
+        <p class="lead">
+          Born and raised in Bakersfield, I am proud to call Ward 7 my home. I am the daughter of immigrants from Punjab and raised by my grandmother. My father worked as a long-haul truck driver my whole life, and my mother has worked for the United States Postal Service for over 20 years. Their hard work and resilience built my determination and they emphasized the importance of a good education. My grandmother’s nurturing love taught me compassion, which I bring every day to my community work. Like my own family, I believe all families should have a fair shot at the American dream.
+          <br/>
+          <br/>
+          I am a proud alum of Ward 7’s public schools. After graduating from Ridgeview High School, I attended UC San Diego to study Political Science. I then started Kern County’s chapter of the Jakara Movement that has now served thousands of local residents. My community involvement and passion to improve people’s lives sent me to Graduate School to attain my double Masters degrees in Urban & Regional Planning and Public Policy. I studied how regional planning and policies can dramatically affect our health, welfare, food systems and the environment, and how it’s essential we integrate the two to create urban and rural areas fit for the needs of local people.
+        </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </container>
+</section>
+
+<!--Text and photo section-->
+
+<section class="bg-light">
+  <container class="py-5">
+    <div class="row px-md-5 mx-md-5">
+      <div class="col-lg-6">
+        <div class="container">
+          <div class="ms-auto">
+        <p class="lead">
+          Born and raised in Bakersfield, I am proud to call Ward 7 my home. I am the daughter of immigrants from Punjab and raised by my grandmother. My father worked as a long-haul truck driver my whole life, and my mother has worked for the United States Postal Service for over 20 years. Their hard work and resilience built my determination and they emphasized the importance of a good education. My grandmother’s nurturing love taught me compassion, which I bring every day to my community work. Like my own family, I believe all families should have a fair shot at the American dream.
+          <br/>
+          <br/>
+          I am a proud alum of Ward 7’s public schools. After graduating from Ridgeview High School, I attended UC San Diego to study Political Science. I then started Kern County’s chapter of the Jakara Movement that has now served thousands of local residents. My community involvement and passion to improve people’s lives sent me to Graduate School to attain my double Masters degrees in Urban & Regional Planning and Public Policy. I studied how regional planning and policies can dramatically affect our health, welfare, food systems and the environment, and how it’s essential we integrate the two to create urban and rural areas fit for the needs of local people.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <img src="/assests/JRG_0831.jpeg" alt="" class="img-fluid d-block mb-5 pb-5">
+  </div>
+    </div>
+  </container>
+</section>
+
+
+<!--Photo and photo section-->
+
+<section class="bg-light">
+  <container class="py-5">
+    <div class="row px-md-5 mx-md-5">
+      <div class="col-lg-6">
+        <div class="container">
+        <img src="/assests/JRG_0831.jpeg" alt="" class="img-fluid d-block mb-5 pb-5">
+      </div>
+    </div>
+    <div class="col">
+      <img src="/assests/JRG_0831.jpeg" alt="" class="img-fluid d-block mb-5 pb-5">
+  </div>
+    </div>
+  </container>
+</section>
+
+<!--Timeline section-->
+<container class="bg-light">
+<div class="py-4 my-5 text-center">
+  <h1 class="display-4 fw-bold text-body-emphasis">
+    History of Service
+  </h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="timeline">
+        <div class="timeline-event">
+          <div class="timeline-date">
+            <p>2022</p>
+          </div>
+          <div class="timeline-content">
+            <h3>Event 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec gravida turpis non lobortis dignissim. Fusce in nunc auctor, rhoncus elit non, efficitur ex.</p>
+          </div>
+        </div>
+        <div class="timeline-event">
+          <div class="timeline-date">
+            <p>2023</p>
+          </div>
+          <div class="timeline-content">
+            <h3>Event 2</h3>
+            <p>Phasellus quis tortor euismod, lacinia turpis sit amet, vestibulum libero. Sed eu massa nunc. Fusce sollicitudin iaculis mauris a tincidunt.</p>
+          </div>
+        </div>
+        <div class="timeline-event">
+          <div class="timeline-date">
+            <p>2024</p>
+          </div>
+          <div class="timeline-content">
+            <h3>Event 3</h3>
+            <p>Phasellus quis tortor euismod, lacinia turpis sit amet, vestibulum libero. Sed eu massa nunc. Fusce sollicitudin iaculis mauris a tincidunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Email Banner-->
+
+<section class="bg-dark email">
+    <div class="row g-0 text-white">
+      <div class="col bg-dark">
+          <img src="/assests/JRG_0817.jpeg" alt="" class="banner-image">
+      </div>
+      <div class="col d-flex align-items-center justify-content-center">
+        <div class="container w-50 text-center">
+          <p class="lead display-4">
+            Let's Connect
+          </p>
+          <p class="lead">I want to hear from you</p>
+          <button type="button" id="email-btn" class="btn btn-primary">Email Me</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="py-3">
+  <div class="container">
+  <div class="row px-md-5 mx-md-5">
+    <div class="col">
+      <ul class="list-unstyled d-flex flex-column flex-row justify-content-center justify-content-start lead fw-bold">
+        <li class="nav-item"><a href="#about" class="nav-link" aria-current="page">Meet _______ </a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Priorities</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Socials</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active">Donate</a></li>
+      </ul>
+      <p class="lead">
+        Paid for by ____ for City Council 2024
+      </p>
+    </div>
+    <div class="col text-center">
+      <a href="#about" class="nav-link" aria-current="page">Email@email.com </a>
+    </div>
+    <div class="col">
+      <img src="/assests/signal-2022-10-18-090138.png" id="footer-logo" alt="Logo" class="d-inline-block">
+    </div>
+  </div>
+</div>
+</footer>
+
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
